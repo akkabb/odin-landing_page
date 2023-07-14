@@ -1,0 +1,186 @@
+
+/*
+# Colors and font style 
+dark background color (hero and footer)
+#1F2937
+hero Main text ("this website is awesome)
+# 48px extra-bold #F9FAF8
+Hero Secondary text, Header Link Text
+18px #E5E7EB
+Header Logo Text
+24px #F9FAF8
+Button color, call to action background color
+#3882F6
+information header text
+## 36px extra-bold #1F2937
+Quote section background color
+#E5E7EB
+Quote text
+## __36px light italic #1F2937__
+*/
+
+:root {
+    --dark_bg: #1F2937;
+    --hero_main_text: #F9FAF8;
+    --hero_second_text: #E5E7EB;
+    --header_logo: #F9FAF8;
+    --cta: #3882F6;
+    --quote_bg: #E5E7EB;
+    --quote_text: #1F2937;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    background: var(--dark_bg)
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5em;
+}
+.header_logo {
+    font-size: 24px;
+    color: var(--header_logo);
+    font-weight: bold;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li {
+    font-size: 18px;
+    color: var(--hero_second_text);
+}
+ li:nth-child(2) {
+    margin: 0 1em;
+ }
+/* Design The main Hero */
+
+.wrapper_hero {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+    margin-bottom: 5em;
+}
+.left_hero {
+    width: 37%;
+    color: var(--hero_main_text);
+    font-weight: bold;
+}
+h1 {
+    font-size: 48px;
+    width: 90%;
+}
+.content_hero {
+    width: 77%;
+    margin-bottom: 1em;
+}
+.link_hero {
+    color: #fff;
+    text-decoration: none;
+    background: #3882F6;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Design Main Part */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Design Random Information Part  */
+
+.random_title {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: bold;
+    text-align: center;
+    margin: 1em 0;
+}
+.random_wrapper_content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7em;
+}
+.random_image {
+    height: 200px;
+    width: 200px;
+    border: 5px solid #3882F6;
+    border-radius: 20px;
+}
+.random_box {
+    width: min-content;
+    margin: 0 1em;
+}
+.random_box p {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 0.5em;
+}
+
+
+/* Design the Testimonial Part */
+
+.testimonial_section {
+    display: flex;
+    justify-content: center;
+    padding: 5em;
+    background: var(--quote_bg);
+    color: var(--quote_text);
+}
+.testimonial_section div {
+    max-width: 67%;
+    width: 50%;
+    font-size: 36px;
+    font-style: italic;
+}
+/* Design the Footer */
+.cta_section {
+    padding: 5em;
+    display: flex;
+    justify-content: center;
+}
+.cta_content {
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--cta);
+    border-radius: 7px;
+    padding: 2em;
+    color: #fff;
+    width: 70%;
+}
+.sign_up {
+    color: #fff;
+    text-decoration: none;
+    background: #3882F6;
+    padding: 5px 30px 5px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid #fff;
+}
+/* Design the Footer */
+
+footer {
+    text-align: center;
+    background: var(--dark_bg);
+    width: 100%;
+    color: #fff;
+    padding: 2em;
+    margin-top: auto;
+}
