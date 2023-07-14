@@ -28,3 +28,5 @@ Quote section background color
 
 Quote text
 ## __36px light italic #1F2937__
+
+The link : https://www.theodinproject.com/lessons/foundations-landing-page#viewing-your-project-on-the-web
